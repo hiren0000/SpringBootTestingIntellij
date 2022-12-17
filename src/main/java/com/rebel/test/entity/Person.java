@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Person 
 {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+
 	private Integer id;
 	private  String pName;
 	private String pSuranme;

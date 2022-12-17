@@ -5,7 +5,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-@SpringBootTest
+
 class SpringBootTestingDemoApplicationTests {
 
 	Calculator c = new Calculator();
@@ -36,6 +36,14 @@ class SpringBootTestingDemoApplicationTests {
 		int ac = c.doMulti(3,6);
 
 		assertThat(ac).isEqualTo(ex);
+	}
+
+	@Test
+	void testCom()
+	{
+		boolean ac = c.com(5,5);
+
+		assertThat(ac).isTrue();
 	}
 
 }
